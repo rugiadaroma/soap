@@ -4,8 +4,8 @@ const scrollElement = document.getElementById('slider');
 // scrollElement.scroll(0,0)
 var calsec = 1
 var oldposition = 0	//position of the scroll
-let coor = document.getElementById('coor');	
-coor.innerHTML="pos: 0" + " calsec: " + calsec;
+// let coor = document.getElementById('coor');	
+// coor.innerHTML="pos: 0" + " calsec: " + calsec;
 let items = document.querySelectorAll('section');
 // const pics = document.getElementsByClassName('imgsoap')
 winWidth = window.outerWidth
@@ -232,7 +232,7 @@ document.addEventListener('keydown', (event) => {
 			doanimation(calsec)
 			console.log('do ani')
 		}
-		coor.innerHTML="pos: " + horizontalScrollPosition + " calsec: " + calsec;
+		// coor.innerHTML="pos: " + horizontalScrollPosition + " calsec: " + calsec;
 	}, 1000);
   }, false);
 
