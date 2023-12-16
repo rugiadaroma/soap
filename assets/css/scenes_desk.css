@@ -1,0 +1,491 @@
+html, body { margin: 0; height: 100%; }
+
+body{
+    font-family: Helvetica, 
+	Arial, sans-serif; 
+	color: #444;
+}
+.control{
+	position: absolute;
+	top: 100vh; 
+}
+section{
+	position: relative;
+	overflow: hidden;
+}
+.text1{
+    font-family: 'Calligraffitti', cursive;
+    font-size: calc(1rem + 2.5vw);
+    text-align: center;
+}
+.text2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(.8rem + 1.5vw);
+    margin-bottom: 5vh;
+}
+
+.mybold{
+    font-weight:100;
+}
+/*************************************/
+/****   Section 01   *****************/
+/*************************************/
+.sec01{
+	height: calc(var(--vh, 1vh) * 100);
+	background-color:white;
+}
+.scrollicon{
+    position: fixed;
+    bottom: 5vh;
+    right: 2vw;
+    width: 10vw;
+    animation: flicker 1s infinite;
+}
+.scrollicon img{
+    width: 10vw;
+}
+@keyframes flicker { 
+    0% {
+        opacity: 0;
+    }
+     50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+#sec01_01{ /*Come la rugiada...*/
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+    width: 40vw;
+    opacity: 0.3;
+    z-index: 10;
+}
+#sec01_02{ /*img blue line...*/
+    position: absolute;
+    top: 80vh;
+    width: 100vw;
+    z-index: 0;
+}
+#sec01_02 img{ 
+    width: 100vw;
+}
+.logotextcon{
+    position: absolute;
+    top: 15vh;
+    right: 10vw;
+    width: 30vw;
+}
+.logocontainer{ /*logo*/
+    position: relative;
+}
+.fpart{
+    opacity: 0;
+}
+.textcontainer{ /*animation text Rugiada*/
+    position: relative;
+    top: calc(var(--vh, 1vh) * -22.5);
+    opacity: 0;
+}
+
+/*************************************/
+/****   Section 02   *****************/
+/*************************************/
+.sec02{
+	height: calc(var(--vh, 1vh) * 130);
+	background-color:#bee6f4;
+}
+#txt_02_01{ /*Rugiada è uno... */
+    position: absolute;
+    left: 5vw;
+    width: 40vw;
+}
+#txt_02_02{ /*Rugiada è uno... */
+    position: absolute;
+    top: 60vh;
+    left: 5vw;
+    width: 90vw;
+}
+#sec02_01{ /*img green line...*/
+    position: absolute;
+    top: 100vh;
+    width: 100vw;
+}
+#sec02_01 img{ /*img green line...*/
+    width: 100vw;
+} 
+.img1{ /*hands moving*/
+    position: absolute;
+    left: 50vw;
+    width: 45vw;
+    height: 50vh;
+    border: black 1px solid;
+    overflow: hidden;
+}
+.img1 img{
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+    /* object-position: 0% center;  */
+}
+.text3{
+    position: relative;
+    left: 5vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    text-align: left;
+}
+/*************************************/
+/****   Section 03   *****************/
+/*************************************/
+.sec03{
+	height: calc(var(--vh, 1vh) * 220);
+	background-color:#c1d1ac;
+}
+.imgelabor{ /*text img elaborazione*/
+    position: absolute;
+    top: 0vh;
+    left: 25vw;
+    opacity: .3;
+    z-index: 999;
+}
+.imgelabor img{
+    width: 50vw;
+    filter: drop-shadow(0px 5px 5px #222);
+} 
+#sec03_01{ /*img pink line...*/
+    position: absolute;
+    top: 50vh;
+    width: 100vw;
+}
+#sec03_01 img{
+    width: 100vw;
+}
+.item_txt{
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1rem + 1.5vw);    
+    z-index: 10;
+}
+
+
+.grid_1{
+    margin-top: 35vh;
+    margin-left: 5vw;
+    width: 90vw;
+    display: grid; 
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 0px;  
+    z-index: 10;
+}
+#item-0 {
+    grid-row-start: 1;
+    grid-column-start: 1; 
+    grid-row-end: 2;
+    grid-column-end: 3;
+    padding-right: 3vw;
+ }
+ #item-1 {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 2;
+    grid-column-end: 4;
+    overflow: hidden;   
+    width: 100%;
+    height: 30vh;
+    border: black solid 1px;
+    z-index: 10;
+ }
+ #item-1 img{
+    width: 100%;
+    object-fit: scale-down;
+ }
+.grid_2{
+    margin-top: 5vh;
+    margin-left: 5vw;
+    width: 90vw;
+    display: grid; 
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 0px;  
+    z-index: 10;
+}
+#item-0b {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    overflow: hidden;   
+    width: 100%;
+    height: 60vh;
+    border: black solid 1px;
+    z-index: 10;
+}
+#item-0b img{
+    width: 100%;
+    object-fit: scale-down;
+}
+#item-1b {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 4;
+    padding-left: 3vw;
+}
+.grid_3{
+    margin-top: 5vh;
+    margin-left: 5vw;
+    width: 90vw;
+    display: grid; 
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 0px;  
+    z-index: 10;
+}
+#item-0c {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 3;
+    padding-right: 3vw;
+ }
+ #item-1c {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-row-end: 2;
+    grid-column-end: 4;
+    overflow: hidden;   
+    width: 100%;
+    height: 60vh;
+    border: black solid 1px;
+    z-index: 10;
+}
+#item-1c img{
+    width: 100%;
+    object-fit: scale-down;
+}
+
+/*************************************/
+/****   Section 04   *****************/
+/*************************************/
+.sec04{
+	height: calc(var(--vh, 1vh) * 450);
+	background-color:#fac7d0;
+}
+.titlesapone{
+    margin-bottom: calc(var(--vh, 1vh) * 3);
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1rem + 2vw);
+    font-weight: bold;
+    text-align: center;
+    z-index: 11;
+}
+.imgsaponi{
+    position: relative;
+    left: 0vw;
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 50);
+    overflow: hidden;
+    border: black solid 1px;
+    filter: drop-shadow(0px 5px 5px #222);
+    z-index: 9;
+}
+.imgsaponi img{
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 50);
+    object-fit: cover;
+    /* object-position: 0% center; */
+}
+.textsapone{
+    margin-top: calc(var(--vh, 1vh) * 3);
+    margin-bottom: calc(var(--vh, 1vh) * 5);
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1rem + 1.5vw);
+    text-align: left;  
+    z-index: 999;  
+}
+.txtleft{
+    margin-right: 3vw;
+}
+.txtright{
+    margin-left: 3vw;
+}
+.grid_saponi {
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-bottom: 15vh;
+    width: 90vw;
+    display: grid; 
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    z-index: 999;
+ }
+   
+ .itemsap-0 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    z-index: 999;
+ }
+ .itemsap-1 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 3;   
+    z-index: 999;
+ }
+#sec04_01{ /*img blue line...*/
+    position: absolute;
+    top: 150vh;
+    width: 100vw;
+}
+#sec04_01 img{
+    width: 100vw;
+}
+
+
+/*************************************/
+/****   Section 05   *****************/
+/*************************************/
+.sec05{
+	height: calc(var(--vh, 1vh) * 150);
+	background-color:#bee6f4;
+}
+.imgsfoursoaps{
+    position: relative;
+    top: 0vh;
+    left: 20vw;
+    width: 60vw;
+    height: calc(var(--vh, 1vh) * 50);
+    overflow: hidden;
+}
+.imgsfoursoaps img{
+    width: 60vw;
+    height: calc(var(--vh, 1vh) * 50);
+    object-fit: contain;
+    /* object-position: 0% center; */
+    scale: .5;
+}
+
+.textlamore{ /*animation text L'amore*/
+    position: relative;
+    left: 2.5vw;
+    width: 95vw;
+    z-index: 999;
+}
+
+.threedrops{
+    position: relative;
+    top: calc(var(--vh, 1vh) * -70); 
+}
+.imgdrop1{   /* drops 1 */
+    position: relative;
+    left: 10vw;
+    width: 10vw;
+    opacity: 0;
+}
+.imgdrop2{   /* drops 2 */
+    position: relative;
+    top: calc(var(--vh, 1vh) * -10); 
+    left: 50vw;
+    width: 5vw;
+    opacity: 0;
+}
+.imgdrop3{   /* drops 3 */
+    position: relative;
+    top: calc(var(--vh, 1vh) * -15); 
+    left: 80vw;
+    width: 3vw;
+    opacity: 0;
+}
+
+#txt_05_01{
+    position: absolute;
+    bottom: 20vh;
+    left: 5vw;
+    width: 90vw;
+    margin-bottom: calc(var(--vh, 1vh) * 3);
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1rem + 1.5vw);
+    font-weight: bold;
+    text-align: center; 
+}
+
+/*************************************/
+/****   Section 06   *****************/
+/*************************************/
+.sec06{
+	height: calc(var(--vh, 1vh) * 100);
+	background-color:#c1d1ac;
+}
+
+#sec06_01{ /*logo*/
+    position: absolute;
+    top: calc(var(--vh, 1vh) * 30);
+    left: 100vw;
+    display: flex;
+	justify-content: center;
+	/* align-content: center; */
+    width: 30vw;
+    overflow: hidden;
+}
+#sec06_01 img{
+    width: 30vw;
+    /* object-fit: cover; */
+}
+
+#txt_06_01{ /*Rigoada è un'iniziativa delle...*/
+    position: relative;
+    top: calc(var(--vh, 1vh) * 10);
+    left: 5vw;
+    width: 90vw;
+    margin-bottom: 3vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1rem + 1vw);
+    font-weight: bold;
+    text-align: center; 
+}
+.txt_06_cont{
+    position: absolute;
+    bottom: calc(var(--vh, 1vh) * 15);
+    width: 50vw;
+    margin-left: 10vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1rem + 1vw);
+    text-align: left;
+}
+.conttitle{
+    font-weight: bold;
+}
+.icon{
+    position: relative;
+    top: 2.3vh;
+    margin-right: 2vw;
+    width: 4vw;
+}
+.mylink{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* 
+<div class="centertext">
+<div>My text</div>
+</div>
+.centertext{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	font-size: clamp(2rem, -3.429rem + 10.143vw, 12rem);
+	font-weight: bold;
+	color: white;
+	width: 100vw;
+	text-align: center;
+} 
+*/

@@ -1,0 +1,404 @@
+html, body { margin: 0; height: 100%; }
+
+body{
+    font-family: Helvetica, 
+	Arial, sans-serif; 
+	color: #444;
+}
+.control{
+	position: absolute;
+	top: 100vh; 
+}
+section{
+	position: relative;
+	overflow: hidden;
+}
+.text1{
+    width: 60vw;
+    font-family: 'Calligraffitti', cursive;
+    font-size: calc(1rem + 4.5vw);
+    text-align: center;
+}
+.text2{
+    position: relative;
+    left: 5vw;
+    width: 90vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1rem + 2vw);;
+    margin-bottom: 5vh;
+}
+.text3{
+    width: 90vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1rem + 2vw);;
+}
+.mybold{
+    font-weight:100;
+}
+/*************************************/
+/****   Section 01   *****************/
+/*************************************/
+.sec01{
+	height: calc(var(--vh, 1vh) * 100);
+	background-color:white;
+}
+.scrollicon{
+    position: fixed;
+    top: calc(var(--vh, 1vh) * 85);
+    right: 5vw;
+    width: 15vw;
+    animation: flicker 1s infinite;
+}
+.scrollicon img{
+    width: 15vw;
+}
+@keyframes flicker { 
+    0% {
+        opacity: 0;
+    }
+     50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+#sec01_01{ /*Come la rugiada...*/
+    position: absolute;
+    top: calc(var(--vh, 1vh) * 10);
+    left: 10vw;
+    width: 80vw;
+    opacity: 0.3;
+    z-index: 10;
+}
+#sec01_02{ /*img blue line...*/
+    position: absolute;
+    top: calc(var(--vh, 1vh) * 90);
+}
+.logotextcon{
+    position: absolute;
+    top: calc(var(--vh, 1vh) * 50);
+    left: 10vw;
+    width: 80vw;
+}
+.logocontainer{ /*logo*/
+    position: relative;
+}
+.fpart{
+    opacity: 0;
+}
+.textcontainer{ /*animation text Rugiada*/
+    position: relative;
+    top: calc(var(--vh, 1vh) * -22.5);
+    opacity: 0;
+}
+
+/*************************************/
+/****   Section 02   *****************/
+/*************************************/
+.sec02{
+	height: calc(var(--vh, 1vh) * 150);
+	background-color:#bee6f4;
+}
+#sec02_01{ /*img green line...*/
+    position: absolute;
+    top: calc(var(--vh, 1vh) * 90);
+}
+.img1{
+    position: relative;
+    left: 0vw;
+    width: 100vw;
+    height: 35vh;
+    border: black 1px solid;
+    overflow: hidden;
+}
+.img1 img{
+    width: 200%;
+    height: 35vh;
+    object-fit: none;
+    object-position: 0% center;
+}
+.text3{
+    position: relative;
+    left: 5vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    text-align: left;
+}
+/*************************************/
+/****   Section 03   *****************/
+/*************************************/
+.sec03{
+	height: calc(var(--vh, 1vh) * 350);
+	background-color:#c1d1ac;
+}
+.imgelabor{
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+}
+.imgelabor img{
+    width: 100vw;
+    filter: drop-shadow(0px 5px 5px #222);
+} 
+#sec03_01{ /*img pink line...*/
+    position: absolute;
+    top: calc(var(--vh, 1vh) * 90);
+}
+.txtsec3{
+    position: relative;
+    left: 5vw;
+    width: 90vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1rem + 2vw);
+}
+#txtsec3_1{
+    margin-top: 30vh;
+    margin-bottom: calc(var(--vh, 1vh) * 5);
+}
+#txtsec3_2{
+    margin-top: calc(var(--vh, 1vh) * 5);
+    margin-bottom: calc(var(--vh, 1vh) * 5);
+}
+#txtsec3_3{
+    margin-top: calc(var(--vh, 1vh) * 5);
+    margin-bottom: calc(var(--vh, 1vh) * 5);
+}
+.img2{
+    position: relative;
+    left: 0vw;
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 35);
+    overflow: hidden;
+    border: black solid 1px;
+}
+.img2 img{
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 35);
+    object-fit: cover;
+    /* object-position: 0% center; */
+}
+.img3{
+    position: relative;
+    left: 5vw;
+    width: 90vw;
+    height: calc(var(--vh, 1vh) * 90);
+    overflow: hidden;
+    border: black solid 1px;
+    filter: drop-shadow(0px 5px 5px #222);    
+}
+.img3 img{
+    width: 90vw;
+    height: calc(var(--vh, 1vh) * 90);
+    object-fit: cover;
+    /* object-position: 0% center; */
+}
+.img4{
+    position: relative;
+    left: 5vw;
+    width: 90vw;
+    height: calc(var(--vh, 1vh) * 90);
+    overflow: hidden;
+    border: black solid 1px;
+    filter: drop-shadow(0px 5px 5px #222);
+}
+.img4 img{
+    width: 90vw;
+    height: calc(var(--vh, 1vh) * 90);
+    object-fit: cover;
+    /* object-position: 0% center; */
+}
+/*************************************/
+/****   Section 04   *****************/
+/*************************************/
+.sec04{
+	height: calc(var(--vh, 1vh) * 650);
+	background-color:#fac7d0;
+}
+.titlesapone{
+    position: relative;
+    width: 100vw;
+    margin-bottom: calc(var(--vh, 1vh) * 3);
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1rem + 2vw);
+    font-weight: bold;
+    text-align: center;
+    z-index: 11;
+}
+.imgsaponi{
+    position: relative;
+    left: 0vw;
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 50);
+    overflow: hidden;
+    border: black solid 1px;
+    filter: drop-shadow(0px 5px 5px #222);
+    z-index: 9;
+}
+.imgsaponi img{
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 50);
+    object-fit: cover;
+    /* object-position: 0% center; */
+}
+.textsapone{
+    position: relative;
+    left: 5vw;
+    width: 90vw;
+    margin-top: calc(var(--vh, 1vh) * 3);
+    margin-bottom: calc(var(--vh, 1vh) * 5);
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1rem + 2vw);
+    text-align: left;  
+    z-index: 10;  
+}
+#sec04_blueline{ /*img blue line...*/
+    position: absolute;
+    top: calc(var(--vh, 1vh) * 150);
+}
+
+
+/*************************************/
+/****   Section 05   *****************/
+/*************************************/
+.sec05{
+	height: calc(var(--vh, 1vh) * 150);
+	background-color:#bee6f4;
+}
+.imgsfoursoaps{
+    position: relative;
+    top: 0vh;
+    left: 0vw;
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 50);
+    overflow: hidden;
+}
+.imgsfoursoaps img{
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 50);
+    object-fit: cover;
+    /* object-position: 0% center; */
+    scale: .5;
+}
+
+.textlamore{ /*animation text L'amore*/
+    position: relative;
+    left: 2.5vw;
+    width: 95vw;
+}
+
+.threedrops{
+    position: relative;
+    top: calc(var(--vh, 1vh) * -70); 
+}
+.imgdrop1{   /* drops 1 */
+    position: relative;
+    left: 10vw;
+    width: 20vw;
+    opacity: 0;
+}
+.imgdrop2{   /* drops 2 */
+    position: relative;
+    top: calc(var(--vh, 1vh) * -10); 
+    left: 50vw;
+    width: 10vw;
+    opacity: 0;
+}
+.imgdrop3{   /* drops 3 */
+    position: relative;
+    top: calc(var(--vh, 1vh) * -15); 
+    left: 80vw;
+    width: 5vw;
+    opacity: 0;
+}
+
+#txt_05_01{
+    position: absolute;
+    bottom: 20vh;
+    width: 100vw;
+    margin-bottom: calc(var(--vh, 1vh) * 3);
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1rem + 2vw);
+    font-weight: bold;
+    text-align: center; 
+}
+
+/*************************************/
+/****   Section 06   *****************/
+/*************************************/
+.sec06{
+	height: calc(var(--vh, 1vh) * 100);
+	background-color:#c1d1ac;
+}
+
+#sec06_01{ /*logo*/
+    position: relative;
+    top: calc(var(--vh, 1vh) * 15);
+    left: 0vw;
+    display: flex;
+	justify-content: center;
+	/* align-content: center; */
+    width: 100vw;
+    height: 50vw;
+    overflow: hidden;
+}
+#sec06_01 img{
+    width: 50vw;
+    height: 50vw;
+    scale: .1;
+    opacity: 0;
+    /* object-fit: cover; */
+}
+
+#txt_06_01{ /*Rigoada è un'iniziativa delle...*/
+    position: relative;
+    top: calc(var(--vh, 1vh) * 25);
+    left: 5vw;
+    width: 90vw;
+    margin-bottom: 3vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1rem + 1vw);
+    font-weight: bold;
+    text-align: center; 
+}
+.txt_06_cont{
+    position: absolute;
+    bottom: calc(var(--vh, 1vh) * 5);
+    width: 80vw;
+    margin-left: 10vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(1rem + 1vw);
+    line-height: 4vh;
+    text-align: left;
+}
+.conttitle{
+    font-weight: bold;
+}
+.icon{
+    position: relative;
+    top: .3vh; 
+    margin-right: 2vw;
+    width: 5vw;
+}
+.mylink{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* 
+<div class="centertext">
+<div>My text</div>
+</div>
+.centertext{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	font-size: clamp(2rem, -3.429rem + 10.143vw, 12rem);
+	font-weight: bold;
+	color: white;
+	width: 100vw;
+	text-align: center;
+} 
+*/
