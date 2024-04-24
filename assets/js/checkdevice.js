@@ -13,10 +13,10 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
 	console.log("Desktop device");
 
 	//check orientation
-	if (window.innerHeight < window.innerWidth) {
+	//if (window.innerHeight < window.innerWidth) {
 		// You are in landscape mode
-		window.location.href = "./desktop.html";
-	}
+	//	window.location.href = "./desktop.html";
+	//}
 	
 	//location.replace('https://comboni.org');
 	//window.location.href = "./desktop.html";
